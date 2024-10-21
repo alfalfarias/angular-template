@@ -12,6 +12,7 @@ import { withNgxsWebSocketPlugin } from '@ngxs/websocket-plugin';
 
 import { routes } from './app.routes';
 import { ConfigsModule } from './configs/configs.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -29,6 +30,6 @@ export const appConfig: ApplicationConfig = {
         keys: '*'
       }),
       withNgxsWebSocketPlugin()
-    )
+    ), provideAnimationsAsync()
   ],
 };
