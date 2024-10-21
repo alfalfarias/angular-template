@@ -23,7 +23,7 @@ export const appConfig: ApplicationConfig = {
       [],
       withNgxsReduxDevtoolsPlugin(),
       withNgxsFormPlugin(),
-      withNgxsLoggerPlugin(),
+      //withNgxsLoggerPlugin(),
       withNgxsRouterPlugin(),
       withNgxsStoragePlugin({
         keys: '*'

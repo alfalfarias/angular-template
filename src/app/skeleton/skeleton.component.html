@@ -1,0 +1,3 @@
+<ng-content *ngIf="status === STATUS.LOADING" select="[LOADING]"></ng-content>
+<ng-content *ngIf="status === STATUS.SUCCESS" select="[SUCCESS]"></ng-content>
+<ng-content *ngIf="status === STATUS.ERROR" select="[ERROR]"></ng-content>
