@@ -3,7 +3,6 @@ import { AppInitializerConfigModule } from './app-initializer-config/app-initial
 import { ReduxConfigModule } from './redux-config/redux-config.module';
 
 @NgModule({
-  declarations: [],
   imports: [
     AppInitializerConfigModule,
     ReduxConfigModule

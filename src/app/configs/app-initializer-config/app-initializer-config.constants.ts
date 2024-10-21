@@ -1,0 +1,1 @@
+export const CONFIG_URL = '/assets/config.json';

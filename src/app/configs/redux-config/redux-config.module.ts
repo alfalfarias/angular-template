@@ -1,7 +1,18 @@
 import { NgModule } from '@angular/core';
+import { NgxsModule } from '@ngxs/store';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+
+import { environment } from '../../../environments/environment';
+import { STATES } from '../../store/state';
 
 @NgModule({
-  declarations: [],
-  imports: []
+  imports: [
+    NgxsModule.forRoot(STATES, {
+      developmentMode: !environment.production,
+    }),
+    NgxsReduxDevtoolsPluginModule.forRoot({
+      disabled: environment.production,
+    }),
+  ],
 })
-export class ReduxConfigModule { }
+export class ReduxConfigModule {}
