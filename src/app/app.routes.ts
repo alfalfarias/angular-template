@@ -1,7 +1,16 @@
 import { Routes } from '@angular/router';
-import { HOME_ROUTING, INTERNAL_SERVER_ERROR_ROUTING, UNAUTHORIZED_ERROR_ROUTING } from './app-routes.constants';
+import { HOME_ROUTING, INTERNAL_SERVER_ERROR_ROUTING, LOGIN_ROUTING, UNAUTHORIZED_ERROR_ROUTING } from './app-routes.constants';
 
 export const routes: Routes = [
+    {
+      path: LOGIN_ROUTING,
+      loadChildren: () =>
+        import('./pages/login-page/login-page.module').then(
+          (m) => m.LoginPageModule
+        ),
+      resolve: {},
+      canLoad: [],
+    },
     {
       path: HOME_ROUTING,
       loadChildren: () =>

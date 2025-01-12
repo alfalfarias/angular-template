@@ -1,1 +1,1 @@
-export const CONFIG_URL = '/assets/config.json';
+export const CONFIG_URL = '/resources/config.json';

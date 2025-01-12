@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    background: lightgray;
+    height: 90%;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100%;
+    width: 35%;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightcoral;
+    height: 100%;
+    width: 65%;
+    background-image: url('/assets/login-wallpaper.jpeg');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wallpaper {
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.logo {
+    margin: 0 40px 0 20px;
+    height: 450px;
+    width: auto;
+}
+
+.logo-min {
+    height: auto;
+    width: 60px;
+}
